@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #000000;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-blur: blur(20px);
+  --accent-color: #00d2ff;
+  --accent-gradient: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.5);
+  --btn-bg: rgba(255, 255, 255, 0.05);
+  --btn-hover: rgba(255, 255, 255, 0.1);
+  --shadow-premium: 0 4px 24px -1px rgba(0, 0, 0, 0.2);
+  
+  /* Tool Icon Backgrounds */
+  --color-calc: #ff2d55;
+  --color-notes: #ff9500;
+  --color-pass: #34c759;
+  --color-units: #5856d6;
+  --color-chrono: #007aff;
+  --color-colors: #af52de;
+  --color-tasks: #5ac8fa;
+  --color-bmi: #ff3b30;
+  --color-tips: #ffcc00;
+  --color-morse: #8e8e93;
+  --color-json: #4cd964;
+  --color-mark: #ff2d70;
+  --color-qr: #00d2ff;
+  --color-weather: #ff9500;
+  --color-world: #007aff;
+  --color-compass: #ff3b30;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, .display-value {
+  font-family: 'Outfit', sans-serif;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glassmorphism Utility */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
