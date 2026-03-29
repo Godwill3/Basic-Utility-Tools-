@@ -1,0 +1,7 @@
+﻿
+> firstproject@0.0.0 build
+> tsc -b && vite build
+
+src/components/Dashboard/ToolCard.tsx(86,11): error TS2322: Type '"none" | "vertical"' is not assignable to type 'BoxOrient | undefined'.
+  Type '"none"' is not assignable to type 'BoxOrient | undefined'.
+src/components/Tools/WorldClock/WorldClock.tsx(245,30): error TS7006: Parameter 'e' implicitly has an 'any' type.

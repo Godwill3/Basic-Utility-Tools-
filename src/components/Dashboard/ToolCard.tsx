@@ -82,8 +82,8 @@ export const ToolCard: React.FC<ToolCardProps> = ({
           color: 'var(--text-secondary)',
           lineHeight: '1.5',
           display: isList ? '-webkit-box' : 'block',
-          WebkitLineClamp: isList ? 1 : 'none',
-          WebkitBoxOrient: isList ? 'vertical' : 'none',
+          WebkitLineClamp: isList ? 1 : undefined,
+          WebkitBoxOrient: isList ? 'vertical' : undefined,
           overflow: isList ? 'hidden' : 'visible'
         }}>{description}</p>
       </div>

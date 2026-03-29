@@ -242,7 +242,7 @@ export const WorldClock: React.FC = () => {
                   time={cityTime}
                   active={isActive(city.id)}
                   onClick={() => setSelectedCity(city)}
-                  onDelete={(e) => {
+                  onDelete={(e: any) => {
                     e.stopPropagation();
                     removeClock(city.id);
                   }}
